@@ -1,0 +1,70 @@
+.back-link {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: #667eea;
+  text-decoration: none;
+}
+
+.service-detail {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.service-detail-main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.service-detail-main img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.service-detail-main h1 {
+  margin-bottom: 0.5rem;
+}
+
+.service-detail-main .category {
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.service-detail-main .description {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.service-info {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.price-badge {
+  background: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.duration-badge {
+  background: #667eea;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.booking-form {
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .service-detail-main {
+    grid-template-columns: 1fr;
+  }
+}
+

@@ -1,0 +1,97 @@
+.part-detail {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.part-detail-main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+}
+
+.part-detail-main img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.part-detail-main h1 {
+  margin-bottom: 0.5rem;
+}
+
+.part-detail-main .sku {
+  color: #666;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.part-detail-main .description {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.part-detail-main .supplier {
+  color: #888;
+  margin-bottom: 1.5rem;
+}
+
+.part-info {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.price-badge {
+  background: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.stock-badge {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.stock-badge.in-stock {
+  background: #d4edda;
+  color: #155724;
+}
+
+.stock-badge.out-of-stock {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.add-to-cart {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.add-to-cart label {
+  font-weight: 500;
+}
+
+.quantity-input {
+  width: 80px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .part-detail-main {
+    grid-template-columns: 1fr;
+  }
+  
+  .add-to-cart {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
